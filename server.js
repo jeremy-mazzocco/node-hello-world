@@ -21,7 +21,7 @@ function getRandomSentence(sentences) {
 }
 
 function htmlResponse(res, content) {
-    const randomSentence = getRandomSentence(sentences); // Ottieni una frase casuale
+    const randomSentence = getRandomSentence(sentences);
     res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
     res.end(`<h1>${content}</h1><h2>${randomSentence}</h2>`);
 }
